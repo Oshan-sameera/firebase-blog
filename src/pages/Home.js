@@ -34,7 +34,7 @@ const Home = (isAuth) => {
                     isAuth && post.author.id === auth.currentUser.uid && 
                     */}
 
-                {isAuth && post.author.id === auth.currentUser.uid && (
+                {isAuth && (
                   <button
                     onClick={() => {
                       deletePost(post.id);
